@@ -37,6 +37,7 @@
     <Compile Include="helpers.js" />
     <Compile Include="pLoad.js" />
     <Compile Include="program.js" />
+    <Compile Include="repl.js" />
     <Compile Include="server.js" />
     <Compile Include="tput.js" />
     <Compile Include="unicode.js" />

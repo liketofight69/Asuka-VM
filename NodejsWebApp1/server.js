@@ -1,11 +1,11 @@
 
-  'use strict';                     //strict is a literal expression ignored by earlier versions of js.with strict enabled you cannot use undeclared variables.
+  /*'use strict'; */                    //strict is a literal expression ignored by earlier versions of js.with strict enabled you cannot use undeclared variables.
 var http = require('http');       //built in function easiest way to include modules. Reads a js file executes the file, and returns the exports object. node.js provides an http module. Can be used to create an HTTP client of a server.
-var port = process.env.PORT || 1337;  //process.env property returns an object containing the user enviroment
+//var port = process.env.PORT || 1337;  //process.env property returns an object containing the user enviroment
 var net = require('net');
 var url = require('url');
 var asuka = require('./pLoad.js');
-
+var blessed = require('blessed');
 
 let connection;
 
@@ -22,9 +22,21 @@ function sendMsg(cmd, args = []) {
 
 
 
-asuka.Server();
 
-asuka.Hello();
+
+
+
+
+
+
+
+
+
+
+
+//asuka.Server();
+
+//asuka.Hello();
 /*console.log(asuka.Text);*/
          //asuka.conChk();   //function (req, res)//
          //createserver is a web server object and is essential to this program. function thats passed into it is called once every http request that is made and is called the request handler
